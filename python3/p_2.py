@@ -11,7 +11,7 @@ of the even-valued terms
 class p_2(util.Problem):
     def __init__(self):
         super().__init__()
-        self.problem_id = 2
+        self.problem_id = "2"
 
     def solve(self):
         lim = 4000000
