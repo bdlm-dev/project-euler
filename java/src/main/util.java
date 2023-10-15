@@ -78,8 +78,8 @@ public class util {
 	/**
 	 * Computes the greatest common divisor
 	 * of two integers using the Euclidean algorithm
-	 * @param a
-	 * @param b
+	 * @param a integer one
+	 * @param b integer two
 	 * @return gcd(a, b)
 	 */
 	public static int gcd(int a, int b) {
@@ -101,12 +101,12 @@ public class util {
 	/**
 	 * Computes the lowest common multiple
 	 * of two integers
-	 * @param a
-	 * @param b
+	 * @param a integer one
+	 * @param b integer two
 	 * @return LCM of a and b
 	 */
 	public static int lcm(int a, int b) {
-		return a * (b / gcd_r(a, b));
+		return a * (b / gcd(a, b));
 	}
 
 	/**
@@ -132,9 +132,9 @@ public class util {
 	public static int sum(List<Integer> n) {
 		int sum = 0;
 
-		for (int i = 0; i < n.size(); i++) {
-			sum += n.get(i);
-		}
+        for (Integer integer : n) {
+            sum += integer;
+        }
 
 		return sum;
 	}
