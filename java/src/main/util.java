@@ -129,8 +129,8 @@ public class util {
 	 * @param n list of integers
 	 * @return sum
 	 */
-	public static int sum(List<Integer> n) {
-		int sum = 0;
+	public static long sum(List<Integer> n) {
+		long sum = 0;
 
         for (Integer integer : n) {
             sum += integer;
