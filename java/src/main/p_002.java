@@ -6,17 +6,17 @@ whose values do not exceed four million,
 find the sum of the even-valued terms.
  */
 
-public class p_2 implements util.IProblem {
+public class p_002 implements util.IProblem {
 
     int lim = 4000000;
     int total = 0;
     int[] nums = {1, 1};
 
     public static void main(String[] args) {
-        util.time(new p_2());
+        util.time(new p_002());
     }
 
-    public int run () {
+    public long run () {
         while (nums[1] < lim) {
             if(nums[1] % 2 == 0) {
                 total += nums[1];

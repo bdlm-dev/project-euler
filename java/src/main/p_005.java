@@ -11,13 +11,13 @@ package main;
 
 // Replace x with problem number in class name, main
 
-public class p_5 implements util.IProblem {
+public class p_005 implements util.IProblem {
 
     public static void main(String[] args) {
-        util.time(new p_5());
+        util.time(new p_005());
     }
 
-    public int run () {
+    public long run () {
         return util.lcm(new int[] {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20});
     }
 }

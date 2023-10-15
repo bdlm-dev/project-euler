@@ -9,13 +9,13 @@ Find the largest palindrome made from the product of
 two 3-digit numbers.
  */
 
-public class p_4 implements util.IProblem {
+public class p_004 implements util.IProblem {
 
     public static void main(String[] args) {
-        util.time(new p_4());
+        util.time(new p_004());
     }
 
-    public int run () {
+    public long run () {
 
         int max = -1, calc;
         String calcString;

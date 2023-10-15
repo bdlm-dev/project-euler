@@ -12,7 +12,7 @@ public class p_x implements util.IProblem {
         util.time(new p_x());
     }
 
-    public int run () {
+    public long run () {
 
         return 0;
     }

@@ -5,13 +5,13 @@ What is the largest prime factor of the number
 600851475143
  */
 
-public class p_3 implements util.IProblem {
+public class p_003 implements util.IProblem {
 
     public static void main(String[] args) {
-        util.time(new p_3());
+        util.time(new p_003());
     }
 
-    public int run () {
+    public long run () {
         long n = 600851475143L;
         int max = -1;
 

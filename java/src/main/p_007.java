@@ -4,13 +4,13 @@ package main;
  * What is the 10001st prime number?
  */
 
-public class p_7 implements util.IProblem {
+public class p_007 implements util.IProblem {
 
     public static void main(String[] args) {
-        util.time(new p_7());
+        util.time(new p_007());
     }
 
-    public int run () {
+    public long run () {
         int lim = 1000000, index = 10000;
         return util.getPrimes(lim).get(index);
         // best lim is 104745, *but* that requires knowing the answer beforehand

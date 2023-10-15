@@ -12,13 +12,13 @@ package main;
 import java.util.List;
 import java.util.ArrayList;
 
-public class p_6 implements util.IProblem {
+public class p_006 implements util.IProblem {
 
     public static void main(String[] args) {
-        util.time(new p_6());
+        util.time(new p_006());
     }
 
-    public int run () {
+    public long run () {
         int lim = 100;
 
         List<Integer> part_1 = new ArrayList<>();

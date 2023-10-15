@@ -5,7 +5,7 @@ import java.util.List;
 
 public class util {
 	public interface IProblem {
-		int run();
+		long run();
 	}
 
 	/**
@@ -15,7 +15,7 @@ public class util {
 	 */
 	public static void time(IProblem prob) {
 		
-		int out;
+		long out;
 		
 		long startTime = System.nanoTime();
 		out = prob.run();
