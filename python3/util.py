@@ -12,9 +12,9 @@ class Problem:
         pass
 
     def run(self):
-        start = time.time_ns()
+        start = time.perf_counter_ns()
         answer = self.solve()
-        end = time.time_ns()
+        end = time.perf_counter_ns()
 
         print(f"Problem {self.problem_id}\n - Returned: {answer}\n - Time Elapsed: {(end-start)/1000000:6f}ms")
 
@@ -48,7 +48,7 @@ def parse_integer_value(n: int):
     # converted to string then reversed with [::-1] so can be separated correctly
     num = str(floor(n))[::-1]
     # separate number into 3-digit bits using a regex in re.findall()
-    bits = findall("..?.?", num)  # . means any character, ? means character could be missing
+    bits = findall("..?.?", num)  # . means any character. ? means character could be missing
     # reverse each 3-digit bit so in correct order as reversed at the start
     # entire list doesn't need to be reversed, index can be used for scale modifier
     bits = [bit[::-1] for bit in bits]

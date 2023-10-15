@@ -14,7 +14,7 @@ class p_6(util.Problem):
         self.problem_id = "6"
 
     @staticmethod
-    def sqr(self):
+    def sqr():
         i = 1
 
         while True:
